@@ -4,7 +4,7 @@ class Storage {
 
   constructor() {
     this.mapPrefix = 'map=';
-    this.storage = (browser.storage.sync || browser.storage.local);
+    this.storage = browser.storage.local;
   }
 
   getAll() {
